@@ -1,14 +1,4 @@
 <h4 align="center"> If you find this GitHub repo useful, please consider giving it a star! ⭐️ </h4> 
-<p align="center">
-    <a href="https://instagram.com/letchu_pkt">
-      <img src="https://img.shields.io/badge/-TWITTER-black?logo=instagram&style=for-the-badge">
-    </a>
-    &nbsp;
-    <a href="https://facebook.com/letchupkt/">
-      <img src="https://img.shields.io/badge/-spyboy.in-black?logo=facebook&style=for-the-badge">
-    </a>
-  
-</p>
 
 <p align="center">
   <img width="20%" src="/camhunt.png" />
