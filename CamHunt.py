@@ -32,7 +32,7 @@ BANNER = rf"""
   {B}VERSION{W}  = 1.0.0
   {B}Made By{W}  = letchupkt
   {B}Instagram{W}  = https://instagram.com/letchu_pkt
-  {B}Github{W}   = https://github.com/letchupkt/Camsploit
+  {B}Github{W}   = https://github.com/letchupkt/CamsHunt
 """
 
 
