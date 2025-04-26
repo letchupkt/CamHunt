@@ -64,7 +64,7 @@ Enter the **public IP address** of the target device when prompted.
 
 ## 📸 **Example Output**  
 
-<img width="100%" align="centre" src="https://github.com/spyboy-productions/CamHunt/blob/main/demo.png" />
+<img width="100%" align="centre" src="![image](https://github.com/user-attachments/assets/eaba83f7-504f-47b0-831c-f99d807c4fdd)" />
 
 ---
 
