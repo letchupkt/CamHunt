@@ -1,30 +1,22 @@
 <h4 align="center"> If you find this GitHub repo useful, please consider giving it a star! ⭐️ </h4> 
 <p align="center">
-    <a href="https://spyboy.in/twitter">
-      <img src="https://img.shields.io/badge/-TWITTER-black?logo=twitter&style=for-the-badge">
+    <a href="https://instagram.com/letchu_pkt">
+      <img src="https://img.shields.io/badge/-TWITTER-black?logo=instagram&style=for-the-badge">
     </a>
     &nbsp;
-    <a href="https://spyboy.in/">
-      <img src="https://img.shields.io/badge/-spyboy.in-black?logo=google&style=for-the-badge">
-    </a>
-    &nbsp;
-    <a href="https://spyboy.blog/">
-      <img src="https://img.shields.io/badge/-spyboy.blog-black?logo=wordpress&style=for-the-badge">
-    </a>
-    &nbsp;
-    <a href="https://spyboy.in/Discord">
-      <img src="https://img.shields.io/badge/-Discord-black?logo=discord&style=for-the-badge">
+    <a href="https://facebook.com/letchupkt/">
+      <img src="https://img.shields.io/badge/-spyboy.in-black?logo=facebook&style=for-the-badge">
     </a>
   
 </p>
 
 <p align="center">
-  <img width="20%" src="https://github.com/spyboy-productions/CamXploit/blob/main/CCTV recon.jpg" />
+  <img width="20%" src="/camhunt.png" />
 </p>
 
 
 
-CamXploit is a reconnaissance tool designed to help researchers and security enthusiasts check if an IP address is hosting an exposed CCTV camera. It scans common camera ports, checks for login pages, tests default credentials, and provides useful search links for further investigation.  
+CamHunt is a reconnaissance tool designed to help researchers and security enthusiasts check if an IP address is hosting an exposed CCTV camera. It scans common camera ports, checks for login pages, tests default credentials, and provides useful search links for further investigation.  
 
 ⚠️ **Disclaimer:** This tool is intended for educational and security research purposes **only**. Unauthorized scanning of systems you do not own is illegal. Use responsibly.  
 
@@ -45,17 +37,17 @@ CamXploit is a reconnaissance tool designed to help researchers and security ent
 
 ### **1️⃣ Clone the Repository**  
 ```bash
-git clone https://github.com/yourusername/CamXploit.git
+git clone https://github.com/letchupkt/CamHunt.git
 ```
 ```
-cd CamXploit
+cd CamHunt
 ```  
 ```bash
 pip install -r requirements.txt
 ```
 ---
 ```
-python CamXploit.py
+python CamHunt.py
 ```
 Enter the **public IP address** of the target device when prompted.  
 
@@ -72,7 +64,7 @@ Enter the **public IP address** of the target device when prompted.
 
 ## 📸 **Example Output**  
 
-<img width="100%" align="centre" src="https://github.com/spyboy-productions/CamXploit/blob/main/demo.png" />
+<img width="100%" align="centre" src="https://github.com/spyboy-productions/CamHunt/blob/main/demo.png" />
 
 ---
 
