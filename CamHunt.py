@@ -32,7 +32,7 @@ BANNER = rf"""
   {B}VERSION{W}  = 1.0.0
   {B}Made By{W}  = letchupkt
   {B}Instagram{W}  = https://instagram.com/letchu_pkt
-  {B}Github{W}   = https://github.com/letchupkt/CamsHunt
+  {B}Github{W}   = https://github.com/letchupkt/CamHunt
 """
 
 
@@ -42,10 +42,42 @@ COMMON_PATHS = ["/", "/admin", "/login", "/viewer", "/webadmin", "/video", "/str
 
 # Default passwords for common cameras
 DEFAULT_CREDENTIALS = {
-    "admin": ["admin", "1234", "password", "12345", "123456", "admin123"],
-    "root": ["root", "pass", "toor"],
-    "user": ["user", "user"],
+    "admin": [
+        "admin", "admin123", "1234", "12345", "123456", "12345678", "password",
+        "admin@123", "administrator", "admin1", "pass", "adminadmin"
+    ],
+    "root": [
+        "root", "toor", "1234", "password", "root123", "admin", "12345", "123456"
+    ],
+    "user": [
+        "user", "user123", "password", "1234", "12345"
+    ],
+    "guest": [
+        "guest", "guest123", "1234", "guestguest"
+    ],
+    "support": [
+        "support", "support123", "12345"
+    ],
+    "operator": [
+        "operator", "operator123", "password"
+    ],
+    "default": [
+        "default", "default123"
+    ],
+    "superadmin": [
+        "superadmin", "superadmin123", "123456", "password"
+    ],
+    "tech": [
+        "tech", "tech123"
+    ],
+    "manager": [
+        "manager", "manager123", "admin"
+    ],
+    "anonymous": [
+        "anonymous", ""
+    ],
 }
+
 
 
 # ========== PRINT SEARCH URLS ==========
@@ -179,6 +211,8 @@ def check_camera_firmware(ip, open_ports):
                 server_header = headers["server"].lower()
                 server_header = server_header.lower()  # Normalize for easier matching
 
+                server_header = server_header.lower()  # Make matching case-insensitive
+
                 if "hikvision" in server_header:
                     print("🔥 Hikvision Camera Detected!")
 
@@ -239,9 +273,86 @@ def check_camera_firmware(ip, open_ports):
                 elif "grandstream" in server_header:
                     print("🔥 Grandstream Camera Detected!")
 
+                elif "wisenet" in server_header:
+                    print("🔥 Wisenet Camera Detected!")
+
+                elif "ycam" in server_header:
+                    print("🔥 Y-Cam Solutions Camera Detected!")
+
+                elif "foscam" in server_header:
+                    print("🔥 Foscam Camera Detected!")
+
+                elif "zoneminder" in server_header:
+                    print("🔥 ZoneMinder Camera Server Detected!")
+
+                elif "trendnet" in server_header:
+                    print("🔥 TRENDnet Camera Detected!")
+
+                elif "intellinet" in server_header:
+                    print("🔥 Intellinet Camera Detected!")
+
+                elif "lilin" in server_header:
+                    print("🔥 Lilin Camera Detected!")
+
+                elif "sharx" in server_header:
+                    print("🔥 Sharx Security Camera Detected!")
+
+                elif "amcrest" in server_header:
+                    print("🔥 Amcrest Camera Detected!")
+
+                elif "hikrobot" in server_header:
+                    print("🔥 HikRobot (Industrial Cameras) Detected!")
+
+                elif "digimerge" in server_header:
+                    print("🔥 Digimerge Camera Detected!")
+
+                elif "swann" in server_header:
+                    print("🔥 Swann Security Camera Detected!")
+
+                elif "logitech" in server_header:
+                    print("🔥 Logitech Camera Detected!")
+
+                elif "belkin" in server_header or "wemo" in server_header:
+                    print("🔥 Belkin WeMo Camera Detected!")
+
+                elif "nvt" in server_header or "nvt phybridge" in server_header:
+                    print("🔥 NVT Phybridge Camera Detected!")
+
+                elif "lorex" in server_header:
+                    print("🔥 Lorex Camera Detected!")
+
+                elif "xiongmai" in server_header or "xmeye" in server_header:
+                    print("🔥 Xiongmai/XMEye Camera Detected!")
+
+                elif "zmodo" in server_header:
+                    print("🔥 Zmodo Camera Detected!")
+
+                elif "tp-link" in server_header or "tplink" in server_header:
+                    print("🔥 TP-Link Camera Detected!")
+
+                elif "wyze" in server_header:
+                    print("🔥 Wyze Camera Detected!")
+
+                elif "reolink" in server_header:
+                    print("🔥 Reolink Camera Detected!")
+
+                elif "canary" in server_header:
+                    print("🔥 Canary Security Camera Detected!")
+
+                elif "kuwfi" in server_header:
+                    print("🔥 KUWFI Camera Detected!")
+
+                elif "vstarcam" in server_header:
+                    print("🔥 VStarcam Camera Detected!")
+
+                elif "ezviz" in server_header:
+                    print("🔥 EZVIZ Camera Detected!")
+
                 else:
                     print("❓ Unknown Device Detected!")
 
+
+                
             else:
                 print(f"❌ No Camera Signature Found")
 
@@ -273,10 +384,12 @@ def test_default_passwords(ip, open_ports):
 
 # ========== MAIN FUNCTION ==========
 def main():
-    target_ip = input(f"{G}[+] {C}Enter Potential Public IP of the Camera: {W}").strip()
+    
 
     print(BANNER)
     print(f'____________________________________________________________________________\n')
+
+    target_ip = input(f"{G}[+] {C}Enter Potential Public IP of the Camera: {W}").strip()
 
     # Manual Search URLs
     print_search_urls(target_ip)
